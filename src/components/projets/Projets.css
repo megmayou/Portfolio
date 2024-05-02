@@ -1,0 +1,81 @@
+@import url("/src/components/variables.css");
+
+.propos {
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-projet {
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+  }
+}
+
+.carroussel {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px #666;
+  min-height: 35vh;
+  max-width: 75vw;
+}
+.carroussel-hidden {
+  display: none;
+}
+
+.imgCarroussel {
+  width: 50%;
+}
+
+.arrow {
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-text);
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 1rem;
+}
+
+.arrow-right {
+  right: 1rem;
+}
+
+.indicators {
+  display: flex;
+  padding: 1rem;
+  bottom: 0.5rem;
+  justify-content: center;
+}
+
+.indicator {
+  background-color: var(--color-text);
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #555;
+  margin: 0px 0.2rem;
+  cursor: pointer;
+}
+
+.indicator-inactive {
+  background-color: grey;
+}
