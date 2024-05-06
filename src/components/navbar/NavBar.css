@@ -36,18 +36,19 @@ nav {
   align-items: flex-end;
   gap: 1rem;
   background-color: var(--color-text);
-  width: 50%;
-  height: 100vh;
+  width: 100%;
+  height: 13vh;
   top: 0;
   a {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1.3rem;
+    padding: 0.8rem;
   }
 }
 
 .menuItems {
-  padding: 1rem;
   font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .menu.active {

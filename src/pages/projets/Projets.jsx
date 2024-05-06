@@ -11,9 +11,14 @@ function Projets({ listAbout }) {
   const prevSlide = () => {
     setSlide(slide === 0 ? listAbout.length - 1 : slide - 1);
   };
+
+  if (!listAbout) {
+    return <div>prout</div>;
+  }
+
   return (
     <section>
-      <h2 className="propos">A propos</h2>
+      <h2 className="propos">Projets</h2>
       <section className="card">
         <BsArrowLeftCircleFill
           className="arrow arrow-left"

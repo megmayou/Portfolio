@@ -1,13 +1,14 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import "../../components/navbar/NavBar.css";
 
 function NavBar() {
   const menuRef = useRef();
-  function openNav(ev) {
+  function openNav() {
     menuRef.current.classList.add("active");
   }
 
-  function closeNav(ev) {
+  function closeNav() {
     menuRef.current.classList.remove("active");
   }
 
@@ -28,8 +29,9 @@ function NavBar() {
             <a href="#">Expériences</a>
           </li>
           <li>
-            <a href="#">Projets</a>
+            <Link to="/projets">Projets</Link>
           </li>
+
           <li>
             <a href="#">Contact</a>
           </li>

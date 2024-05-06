@@ -2,6 +2,9 @@
 
 .propos {
   text-align: center;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  color: var(--color-text);
 }
 
 .card {
